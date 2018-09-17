@@ -424,7 +424,7 @@
                         },
                         cellHeight: {
                             type: Number,
-                            default: '120'
+                            default: '144'
                         },
                         draggable: {
                             type: Boolean,
@@ -619,7 +619,9 @@
                                 height: n + "px",
                                 // width: e + "%",
                                 // height: n + "vh", //Преобразование размера для обертки
-                                transform: "translate3d(" + this.left + "px, " + r + "px, 0)"
+                                transform: "translate3d(" + this.left + "px, " + r + "px, 0)",
+                                // width: 144 + "px",
+                                // height: 140 + "px"
                             }
                         },
                         left: function() {
@@ -723,7 +725,7 @@
             }, function(t, e, n) {
                 e = t.exports = n(0)(), e.push([t.i, "\nbody {\n  margin: 0;\n  padding: 0;\n}\n.v-grid {\n  display: block;\n  position: relative;\n  width: 100%;\n background-color: pink;\n}\n", ""])
             }, function(t, e, n) {
-                e = t.exports = n(0)(), e.push([t.i, "\n.v-grid-item-wrapper {\n background-color: red;\n  display: flex;\n justify-content: center;\n align-items: center;\n  position: absolute;\n  box-sizing: border-box;\n  left: 0;\n  top: 0;\n  user-select: none;\n  transform: translate3d(0px, 0px, 0px);\n  z-index: 1;\n border: 1px solid #fff;\n}\n.v-grid-item-wrapper.v-grid-item-animate {\n    transition: transform 800ms ease;\n}\n", ""])
+                e = t.exports = n(0)(), e.push([t.i, "\n.v-grid-item-wrapper {\n margin-left: 5px;\n margin-right: 5px;\n background-color: red;\n  display: flex;\n justify-content: center;\n align-items: center;\n  position: absolute;\n  box-sizing: border-box;\n  left: 0;\n  top: 0;\n  user-select: none;\n  transform: translate3d(0px, 0px, 0px);\n  z-index: 1;\n border: 1px solid #fff;\n}\n.v-grid-item-wrapper.v-grid-item-animate {\n    transition: transform 800ms ease;\n}\n", ""])
             }, function(t, e, n) {
                 n(14);
                 var r = n(1)(n(5), n(12), null, null);
